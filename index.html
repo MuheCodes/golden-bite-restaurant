@@ -1,0 +1,796 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Golden Bite Restaurant — delicious food, warm hospitality, and memorable moments.">
+
+    <title>Golden Bite Restaurant | Fresh Food, Warm Moments</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Website CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Website JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement">
+        Fresh ingredients. Beautiful moments.
+        <span>Open daily · 9:00 AM – 10:00 PM</span>
+    </div>
+
+
+    <!-- Header -->
+    <header class="site-header" id="top">
+
+        <a class="brand" href="#top" aria-label="Golden Bite home">
+            <span class="brand-mark">G<span>B</span></span>
+
+            <span class="brand-name">
+                GOLDEN BITE
+                <small>RESTAURANT</small>
+            </span>
+        </a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="mainNav"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="main-nav" id="mainNav">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#story" class="nav-link">Our Story</a>
+            <a href="#menu" class="nav-link">Menu</a>
+            <a href="#gallery" class="nav-link">Gallery</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <a class="header-cta" href="#bookingForm">
+            Book a table <span>↗</span>
+        </a>
+
+    </header>
+
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+
+            <div
+                class="hero-image"
+                role="img"
+                aria-label="Beautifully served restaurant meal"
+            ></div>
+
+            <div class="hero-shade"></div>
+
+            <div class="hero-content">
+
+                <p class="eyebrow light">WELCOME TO GOLDEN BITE</p>
+
+                <h1>
+                    Taste the joy.<br>
+                    <em>Feel at home.</em>
+                </h1>
+
+                <p class="hero-copy">
+                    Discover delicious flavors, freshly prepared meals,
+                    and unforgettable moments around the table.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a class="button button-gold" href="#menu">
+                        Explore our menu <span>→</span>
+                    </a>
+
+                    <a class="text-link light-link" href="#story">
+                        Our story <span>↗</span>
+                    </a>
+
+                </div>
+
+                <div class="hero-note">
+                    <span class="note-line"></span>
+                    FRESH FOOD · WARM HOSPITALITY · HAPPY MOMENTS
+                </div>
+
+            </div>
+
+            <div class="hero-side-label">
+                EST. 2018&nbsp; · &nbsp;YOUR NEIGHBORHOOD TABLE
+            </div>
+
+        </section>
+
+
+        <!-- Our Story Section -->
+        <section class="intro section-wrap" id="story">
+
+            <div class="intro-image">
+
+                <img
+                    src="images/restaurant-story.jpg"
+                    alt="Warmly lit restaurant dining table"
+                    loading="lazy"
+                >
+
+                <div class="image-stamp">
+                    <strong>100%</strong>
+                    <span>FRESH<br>EVERY DAY</span>
+                </div>
+
+            </div>
+
+            <div class="intro-copy">
+
+                <p class="eyebrow">A PLACE TO GATHER</p>
+
+                <h2>
+                    More than a meal.<br>
+                    <em>A little moment<br>of happiness.</em>
+                </h2>
+
+                <p>
+                    At Golden Bite, we believe good food brings people closer.
+                    Our kitchen combines familiar favorites, fresh ingredients,
+                    and a little creativity to make every visit feel special.
+                </p>
+
+                <p>
+                    Come as you are, bring the people you love, and let us take
+                    care of the rest.
+                </p>
+
+                <a class="text-link dark-link" href="#contact">
+                    Get to know us <span>↗</span>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Menu Section -->
+        <section class="menu-section" id="menu">
+
+            <div class="section-wrap">
+
+                <div class="section-heading">
+
+                    <div>
+                        <p class="eyebrow">A LITTLE TASTE OF HAPPINESS</p>
+                        <h2>Discover our <em>menu.</em></h2>
+                    </div>
+
+                    <p>
+                        From delicious main dishes to irresistible desserts,
+                        every plate is prepared with care and served with love.
+                    </p>
+
+                </div>
+
+
+                <!-- Menu Filters -->
+                <div class="menu-filters" role="group" aria-label="Filter menu">
+
+                    <button class="filter-button active" data-filter="all" type="button">
+                        All favorites
+                    </button>
+
+                    <button class="filter-button" data-filter="main" type="button">
+                        Main dishes
+                    </button>
+
+                    <button class="filter-button" data-filter="small" type="button">
+                        Small plates
+                    </button>
+
+                    <button class="filter-button" data-filter="dessert" type="button">
+                        Desserts
+                    </button>
+
+                </div>
+
+
+                <!-- Menu Items -->
+                <div class="menu-grid">
+
+                    <article class="menu-card" data-category="main">
+
+                        <div class="menu-photo">
+                            <img
+                                src="images/golden-herb-chicken.jpg"
+                                alt="Fresh grilled chicken bowl"
+                                loading="lazy"
+                            >
+
+                            <span class="popular-tag">HOUSE FAVORITE</span>
+                        </div>
+
+                        <div class="menu-card-info">
+
+                            <div>
+                                <h3>Golden Herb Chicken</h3>
+
+                                <p>
+                                    Tender herb-marinated chicken served with
+                                    fresh seasonal greens and our signature sauce.
+                                </p>
+                            </div>
+
+                            <strong>ETB 480</strong>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="menu-card" data-category="main">
+
+                        <div class="menu-photo">
+                            <img
+                                src="images/garden-pasta.jpg"
+                                alt="Pasta with herbs and vegetables"
+                                loading="lazy"
+                            >
+                        </div>
+
+                        <div class="menu-card-info">
+
+                            <div>
+                                <h3>Garden Pasta</h3>
+
+                                <p>
+                                    Fresh pasta tossed with roasted vegetables,
+                                    parmesan cheese, and fragrant basil.
+                                </p>
+                            </div>
+
+                            <strong>ETB 390</strong>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="menu-card" data-category="small">
+
+                        <div class="menu-photo">
+                            <img
+                                src="images/market-fresh-salad.jpg"
+                                alt="Fresh salad with tomatoes"
+                                loading="lazy"
+                            >
+                        </div>
+
+                        <div class="menu-card-info">
+
+                            <div>
+                                <h3>Market Fresh Salad</h3>
+
+                                <p>
+                                    A refreshing mix of crisp greens, ripe tomatoes,
+                                    cucumber, and lemon dressing.
+                                </p>
+                            </div>
+
+                            <strong>ETB 260</strong>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="menu-card" data-category="small">
+
+                        <div class="menu-photo">
+                            <img
+                                src="images/house-garden-pizza.jpg"
+                                alt="Freshly baked pizza"
+                                loading="lazy"
+                            >
+                        </div>
+
+                        <div class="menu-card-info">
+
+                            <div>
+                                <h3>House Garden Pizza</h3>
+
+                                <p>
+                                    Stone-baked crust topped with melted mozzarella,
+                                    tomato, and garden herbs.
+                                </p>
+                            </div>
+
+                            <strong>ETB 420</strong>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="menu-card" data-category="dessert">
+
+                        <div class="menu-photo">
+                            <img
+                                src="images/chocolate-cloud.jpg"
+                                alt="Chocolate dessert in a glass"
+                                loading="lazy"
+                            >
+                        </div>
+
+                        <div class="menu-card-info">
+
+                            <div>
+                                <h3>Chocolate Cloud</h3>
+
+                                <p>
+                                    Rich and creamy chocolate dessert with
+                                    a smooth, delicate finish.
+                                </p>
+                            </div>
+
+                            <strong>ETB 220</strong>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="menu-card" data-category="dessert">
+
+                        <div class="menu-photo">
+                            <img
+                                src="images/berry-cheesecake.jpg"
+                                alt="Berry cheesecake dessert"
+                                loading="lazy"
+                            >
+                        </div>
+
+                        <div class="menu-card-info">
+
+                            <div>
+                                <h3>Berry Cheesecake</h3>
+
+                                <p>
+                                    Silky cheesecake finished with a delicious
+                                    topping of seasonal berries.
+                                </p>
+                            </div>
+
+                            <strong>ETB 240</strong>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <p class="menu-footnote">
+                    Sample menu and prices for demonstration.
+                    Replace these with the restaurant's actual menu before launch.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Quote Section -->
+        <section class="quote-section">
+
+            <div class="quote-mark">“</div>
+
+            <blockquote>
+                Food tastes better when<br>
+                we share it together.
+            </blockquote>
+
+            <p>THE GOLDEN BITE EXPERIENCE</p>
+
+        </section>
+
+
+        <!-- Gallery Section -->
+        <section class="gallery-section section-wrap" id="gallery">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">A TASTE OF THE EXPERIENCE</p>
+
+                    <h2>
+                        Come hungry.<br>
+                        <em>Leave happy.</em>
+                    </h2>
+                </div>
+
+                <p>
+                    Good food, cozy corners, and the little details
+                    that make a visit memorable.
+                </p>
+
+            </div>
+
+
+            <div class="gallery-grid">
+
+                <img
+                    src="images/gallery-interior.jpg"
+                    alt="Restaurant interior"
+                    loading="lazy"
+                >
+
+                <img
+                    src="images/gallery-table.jpg"
+                    alt="Restaurant table setting"
+                    loading="lazy"
+                >
+
+                <img
+                    src="images/gallery-atmosphere.jpg"
+                    alt="Restaurant dining atmosphere"
+                    loading="lazy"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact and Reservation Section -->
+        <section class="contact-section" id="contact">
+
+            <div class="contact-inner section-wrap">
+
+                <div class="contact-copy">
+
+                    <p class="eyebrow light">WE'RE SAVING YOU A SEAT</p>
+
+                    <h2>
+                        Let's make<br>
+                        <em>it a date.</em>
+                    </h2>
+
+                    <p>
+                        Planning a dinner, a family lunch, or a little catch-up?
+                        We'd love to welcome you.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-content">
+
+
+                    <!-- Reservation Form -->
+                    <form
+                        class="booking-form"
+                        id="bookingForm"
+                        action="reserve.php"
+                        method="POST"
+                    >
+
+                        <h3>Request a reservation</h3>
+
+                        <p>
+                            Send us your details and we'll get back to you.
+                        </p>
+
+
+                        <!-- Number of Guests -->
+                        <div class="form-row">
+
+                            <div>
+                                <label for="guestCount">Number of guests</label>
+
+                                <select id="guestCount" name="guests" required>
+                                    <option value="1">1 Guest</option>
+                                    <option value="2" selected>2 Guests</option>
+                                    <option value="3">3 Guests</option>
+                                    <option value="4">4 Guests</option>
+                                    <option value="5">5 Guests</option>
+                                    <option value="6">6 Guests</option>
+                                    <option value="7">7 Guests</option>
+                                    <option value="8">8 Guests</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Customer Name -->
+                        <label for="guestName">Your name</label>
+
+                        <input
+                            id="guestName"
+                            name="customer_name"
+                            type="text"
+                            placeholder="Enter your full name"
+                            minlength="2"
+                            maxlength="100"
+                            autocomplete="name"
+                            required
+                        >
+
+
+                        <!-- Email -->
+                        <label for="guestEmail">Email address</label>
+
+                        <input
+                            id="guestEmail"
+                            name="email"
+                            type="email"
+                            placeholder="example@email.com"
+                            maxlength="150"
+                            autocomplete="email"
+                            required
+                        >
+
+
+                        <!-- Phone -->
+                        <div class="form-row">
+
+                            <div>
+                                <label for="guestPhone">Phone number</label>
+
+                                <input
+                                    id="guestPhone"
+                                    name="phone"
+                                    type="tel"
+                                    placeholder="0912345678 or +251912345678"
+                                    pattern="(0[79][0-9]{8}|\+251[79][0-9]{8})"
+                                    title="Enter a valid Ethiopian mobile number"
+                                    maxlength="13"
+                                    autocomplete="tel"
+                                    required
+                                >
+                            </div>
+
+                        </div>
+
+
+                        <!-- Reservation Date and Time -->
+                        <div class="form-row">
+
+                            <div>
+                                <label for="visitDate">Preferred date</label>
+
+                                <input
+                                    id="visitDate"
+                                    name="reservation_date"
+                                    type="date"
+                                    required
+                                >
+                            </div>
+
+                            <div>
+                                <label for="visitTime">Preferred time</label>
+
+                                <input
+                                    id="visitTime"
+                                    name="reservation_time"
+                                    type="time"
+                                    min="09:00"
+                                    max="22:00"
+                                    required
+                                >
+                            </div>
+
+                        </div>
+                        
+                        <!-- Additional Message -->
+                        <label for="guestMessage">
+                            Additional message
+                        </label>
+
+                        <textarea
+                            id="guestMessage"
+                            name="message"
+                            placeholder="Any special requests?"
+                            rows="3"
+                            maxlength="2000"
+                        ></textarea>
+
+
+                        <!-- Submit Button -->
+                        <button
+                            class="button button-gold form-submit"
+                            type="submit"
+                        >
+                            Request a table <span>→</span>
+                        </button>
+
+                        <p
+                            class="form-message"
+                            id="formMessage"
+                            role="status"
+                            aria-live="polite"
+                        ></p>
+
+                        <small>
+                            Your reservation will be submitted for confirmation.
+                        </small>
+
+                    </form>
+
+
+                    <!-- Contact Details -->
+                    <div class="contact-details">
+
+                        <div class="contact-location-card">
+
+                            <div>
+                                <span>FIND US IN ASELLA</span>
+
+                                <h3>Visit Golden Bite</h3>
+
+                                <p>
+                                    Near Dashen Bank, Asella, Arsi Zone,
+                                    Oromia, Ethiopia
+                                </p>
+                            </div>
+
+                            <a
+                                class="contact-directions"
+                                href="https://www.google.com/maps/search/?api=1&query=Dashen+Bank+Asella+Ethiopia"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Get Directions ↗
+                            </a>
+
+                        </div>
+
+
+                        <div class="contact-info-card">
+
+                            <span>CALL US</span>
+
+                            <a href="tel:+251983954487">
+                                +251 983 954 487
+                            </a>
+
+                        </div>
+
+
+                        <div class="contact-info-card">
+
+                            <span>EMAIL US</span>
+
+                            <a href="mailto:muheboss12@gmail.com">
+                                muheboss12@gmail.com
+                            </a>
+
+                        </div>
+
+
+                        <div class="contact-info-card">
+
+                            <span>OPENING HOURS</span>
+
+                            <strong>
+                                Every day · 9:00 AM – 10:00 PM
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <a class="brand footer-brand" href="#top">
+
+            <span class="brand-mark">G<span>B</span></span>
+
+            <span class="brand-name">
+                GOLDEN BITE
+                <small>RESTAURANT</small>
+            </span>
+
+        </a>
+
+        <p>Good food. Warm moments. Always.</p>
+
+        <div class="footer-bottom">
+
+            <span>
+                © <span id="year"></span>
+                Golden Bite Restaurant. Demo website.
+            </span>
+
+            <a href="#top">Back to top ↑</a>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Reservation Date and Time Validation -->
+    <script>
+        const dateInput = document.getElementById("visitDate");
+        const timeInput = document.getElementById("visitTime");
+
+        function getLocalDate() {
+            const now = new Date();
+
+            const year = now.getFullYear();
+            const month = String(now.getMonth() + 1).padStart(2, "0");
+            const day = String(now.getDate()).padStart(2, "0");
+
+            return `${year}-${month}-${day}`;
+        }
+
+        function updateTimeLimit() {
+            if (!dateInput || !timeInput) {
+                return;
+            }
+
+            const today = getLocalDate();
+
+            if (dateInput.value === today) {
+                const now = new Date();
+
+                const hours = String(now.getHours()).padStart(2, "0");
+                const minutes = String(now.getMinutes()).padStart(2, "0");
+
+                const currentTime = `${hours}:${minutes}`;
+
+                timeInput.min = currentTime > "09:00"
+                    ? currentTime
+                    : "09:00";
+
+            } else {
+                timeInput.min = "09:00";
+            }
+        }
+
+        if (dateInput && timeInput) {
+
+            dateInput.min = getLocalDate();
+
+            dateInput.addEventListener("change", function () {
+                updateTimeLimit();
+
+                // Clear the previous time when the date changes.
+                timeInput.value = "";
+            });
+
+            updateTimeLimit();
+        }
+    </script>
+
+</body>
+</html>
+```

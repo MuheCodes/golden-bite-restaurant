@@ -1,0 +1,8 @@
+
+.env
+.env.*
+includes/db.php
+*.sql
+*.sql.gz
+node_modules/
+*.log

@@ -1,24 +1,68 @@
-GOLDEN BITE RESTAURANT — DEMO WEBSITE
+# 🍽️ Golden Bite Restaurant
 
-HOW TO OPEN
-1. Extract the ZIP file.
-2. Open the extracted golden-bite-restaurant folder in Visual Studio Code.
-3. Open index.html in your browser, or copy the folder into C:\xampp\htdocs\
-   and visit http://localhost/golden-bite-restaurant/
-4. Internet access is needed for Google Fonts and the remote Unsplash photos.
+**Golden Bite** is a modern restaurant website designed to provide customers with a simple and enjoyable online experience.
 
-FILES
-- index.html: page content and structure
-- style.css: layout, colors, responsive design
-- script.js: mobile navigation, menu filters, demo reservation form
+Customers can explore the restaurant, discover delicious meals, view the food gallery, and make table reservations online.
 
-IMPORTANT BEFORE SELLING/CUSTOMIZING
-- This is a fictional sample business. Replace the business name, address, phone,
-  opening hours, menu, prices, photos, and all sample details with the real client's
-  approved information.
-- The reservation form is front-end only. It displays a demo confirmation; it does
-  not send a booking. Connect it to a real backend, email service, or booking provider
-  before promising real reservations.
-- Replace the sample phone number and configure a real WhatsApp link if needed.
-- Check image licensing and use images the client has permission to publish.
-- Test on desktop and mobile before delivering to a customer.
+## ✨ Features
+
+- Modern and responsive website design
+- Beautiful restaurant homepage
+- Food menu and categories
+- Restaurant photo gallery
+- Online table reservation system
+- Customer reservation form
+- Admin dashboard
+- Reservation management
+- PHP and MySQL database integration
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- PHP
+- MySQL
+- XAMPP
+
+## 👨‍🍳 Project Overview
+
+Golden Bite connects restaurant customers with restaurant management through an online platform.
+
+**Customer side:** Visitors can explore the restaurant and submit reservation requests.
+
+**Admin side:** Administrators can access the dashboard, view customer reservations, and manage reservation statuses.
+
+## 💻 Run Locally
+
+1. Install XAMPP.
+2. Clone or download this repository.
+3. Place the project folder inside `htdocs`.
+4. Start Apache and MySQL.
+5. Create the database named `golden_bite_db` in phpMyAdmin.
+6. Configure the database connection in `includes/db.php`.
+7. Import the database SQL file if available.
+8. Open your browser and visit:
+
+   `http://localhost/golden-bite-restaurant/`
+
+## 🔐 Security
+
+- Keep database credentials private.
+- Do not upload real customer information.
+- Protect admin pages with authentication.
+- Validate and secure user-submitted data.
+
+## 👨‍💻 Developer
+
+**MuheCodes**
+
+GitHub: https://github.com/MuheCodes
+
+## ❤️ Acknowledgment
+
+Built with passion, creativity, and dedication to creating a better restaurant experience.
+
+---
+
+**Golden Bite Restaurant — Good Food, Great Moments.**
